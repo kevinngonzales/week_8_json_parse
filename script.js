@@ -1,0 +1,31 @@
+const jsonData = `{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "address": {
+                "city": "New York",
+                "zipcode": "10001"
+            }
+        }
+    ],
+    "products": [
+        {
+            "id": 101,
+            "name": "Laptop",
+            "price": 999.99
+        },
+        {
+            "id": 102,
+            "name": "Smartphone",
+            "price": 499.99
+        }
+    ]
+}`;
+
+
+let parsedData = JSON.parse(jsonData);
+
+console.log(parsedData);
+
